@@ -8,10 +8,10 @@ install:
 
 script:
   - python -m flake8 my_src/
-  - python -m pytest -vvv my_src/ --cov my_src
+  - python -m pytest -vvv my_src/tests/tests.py --cov my_src
 
 after_success:
-  - codecov e1abb037-178f-47e1-98a2-da4fb8c699ce
+  - codecov
  
 branches:
   only:
