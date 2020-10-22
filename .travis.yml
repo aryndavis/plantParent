@@ -1,0 +1,19 @@
+language: python
+python:
+  - 3.6
+  - 3.7
+cache: pip
+
+install:
+  - pip install flake8 codecov pytest pytest-cov
+
+script:
+  - python -m flake8 src/
+  - python -m pytest -vvv src/ --cov src
+
+after_success:
+  - codecov e1abb037-178f-47e1-98a2-da4fb8c699ce
+ 
+branches:
+  only:
+  - master
