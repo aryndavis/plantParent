@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 *.wav
 .DS_Store
+*.txt
+*.ini
 # C extensions
 *.so
 *.json
