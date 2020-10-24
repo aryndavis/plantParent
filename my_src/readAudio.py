@@ -43,6 +43,3 @@ def read_audio():
     wf.writeframes(b''.join(frames))
     wf.close()
     return filename
-
-
-read_audio()
