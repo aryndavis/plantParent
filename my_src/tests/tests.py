@@ -2,7 +2,7 @@ import os
 import sys
 import json
 import unittest
-from unittest.mock import patch, MagicMock # noqa: F401
+from unittest.mock import patch, MagicMock  # noqa: F401
 sys.path.insert(0, os.path.abspath(".."))
 from my_src import print_audio_nice, find_audio, read_audio  # noqa
 
