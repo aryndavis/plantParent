@@ -2,9 +2,16 @@ language: python
 python:
   - 3.7
 cache: pip
+os:
+  - osx
+  
+before_install:
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update          ; fi
 
 install:
   - pip install flake8 codecov pytest pytest-cov 
+  - brew install portaudio
+  - pip install pyaudio
 
 
 script:

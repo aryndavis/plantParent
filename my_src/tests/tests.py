@@ -4,15 +4,16 @@ import json
 from mock import patch
 import unittest
 sys.path.insert(0, os.path.abspath(".."))
-from my_src import print_audio_nice, find_audio  # noqa
+from my_src import print_audio_nice, find_audio, read_audio  # noqa
 
 
 class TestStuff(unittest.TestCase):
     def testRecordAudio(self):
-        pass
+        
     # TODO: need to find out how to patch or mock pyaudio
         # with patch('pyaudio') as p:
-        #   assert read_audio() == 'output.wav'
+        
+        assert read_audio() == 'output.wav'
 
     def testfind_audio(self):
         # TODO: accidentally set this up with requests.get instead of requests.
