@@ -2,11 +2,11 @@ language: python
 dist: xenial
 cache: pip
 os:
-  - windows
+  - linux
 
 install:
   - pip install flake8 codecov pytest pytest-cov 
-  - python -m pip install pyaudio
+  - pip install pyaudio
 
 script:
   - python -m flake8 my_src/
