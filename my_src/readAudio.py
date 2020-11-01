@@ -1,8 +1,10 @@
+from scipy.io.wavfile import write
 import pyaudio
 import wave
+import sounddevice as sd
 
 
-def read_audio():
+def read_audio1():
     chunk = 1024  # Record in chunks of 1024 samples
     sample_format = pyaudio.paInt16  # 16 bits per sample
     channels = 1
@@ -43,3 +45,12 @@ def read_audio():
     wf.writeframes(b''.join(frames))
     wf.close()
     return filename
+
+
+def read_audio():
+    fs = 44100  # Sample rate
+    seconds = 3  # Duration of recording
+
+    myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=1)
+    sd.wait()  # Wait until recording is finished
+    write('output.wav', fs, myrecording)  # Save as WAV file
