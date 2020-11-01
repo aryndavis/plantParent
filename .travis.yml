@@ -2,16 +2,11 @@ language: python
 dist: xenial
 cache: pip
 os:
-  - osx
-
-before_install:
-  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update          ; fi
+  - windows
 
 install:
   - pip install flake8 codecov pytest pytest-cov 
-  - brew install portaudio
-  - pip install pyaudio
-
+  - python -m pip install pyaudio
 
 script:
   - python -m flake8 my_src/
