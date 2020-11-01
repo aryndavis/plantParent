@@ -9,10 +9,9 @@ from my_src import print_audio_nice, find_audio, read_audio  # noqa
 
 class TestStuff(unittest.TestCase):
     def testRecordAudio(self):
-        
-    # TODO: need to find out how to patch or mock pyaudio
+        # TODO: need to find out how to patch or mock pyaudio
         # with patch('pyaudio') as p:
-        
+
         assert read_audio() == 'output.wav'
 
     def testfind_audio(self):
