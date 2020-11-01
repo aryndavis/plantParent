@@ -1,8 +1,9 @@
 import os
 import sys
 import json
-from mock import patch
 import unittest
+from unittest import mock
+from mock import patch
 sys.path.insert(0, os.path.abspath(".."))
 from my_src import print_audio_nice, find_audio, read_audio  # noqa
 
