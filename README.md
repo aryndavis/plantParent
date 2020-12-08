@@ -1,4 +1,4 @@
-# animemusic
+# plantParent
 
 ![GitHub](https://img.shields.io/github/license/aryndavis/animemusic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/aryndavis/animemusic)
@@ -7,6 +7,4 @@
 ![Travis (.org)](https://img.shields.io/travis/aryndavis/animemusic)
 ![Codecov](https://img.shields.io/codecov/c/github/aryndavis/animemusic)
 
-I have recently started watching anime and noticed the importance of the background music in fight scenes to create feelings of hope or despair. These songs are also widely known and recognized by fans. And many of these songs for popular shows are recognized by Shazam, a music recognition app. I would like to take it one step further and create an application that will intake a sound clips of action scene music, identify the show using a music fingerprinting API (since Shazam doesnt have one themselves), and then essentially rank the fights that use that. I hope to also be able to display clips from each relevant battle. This will hopefully help fans be more cognizant of the show's music and be able to participate in debate around the legitimacy of a fight's ranking. I imagine that I could also use some recommendation algorithms to identify similar shows once a song from a show has been found.
-
-There are many music recognition APIs to use, one named Aud looks promising. I plan to primarily make this in python, but we'll see. It'll take the form of a web application.
+I have recently started buying a lot of plants and would like something to help me keep track of what each plant's needs are, whether that be soil type, watering schedule, and how to diagnose fungal infections and what not. This library is the solution to that. 
