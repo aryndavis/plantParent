@@ -12,11 +12,10 @@ before_deploy:
 deploy:
   - provider: script
     script: travis-wait-improved --timeout 30m packer build packer.json
-    
+
 install:
   - pip install flake8 codecov pytest pytest-cov
   - pip install -r requirements.txt
-  - travis_wait mvn install
 
 
 script:
