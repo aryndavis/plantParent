@@ -3,7 +3,6 @@ flake8==3.8.4
 pep8==1.7.1
 pytest==6.2.1
 pytest-datafiles==2.0
-tokenizers==0.8.0rc4
 torch==1.7.1
 torchvision==0.8.2
 transformers==3.0.0
