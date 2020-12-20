@@ -7,7 +7,7 @@ os:
   - linux
 
 install:
-  - pip install flake8 codecov pytest pytest-cov torch
+  - pip install flake8 codecov pytest pytest-cov
   - pip install -r requirements.txt
 
 

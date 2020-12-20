@@ -2,7 +2,6 @@
 file for testing all of my_src code and functionalities
 """
 import unittest
-from unittest.mock import patch, MagicMock  # noqa: F401
 from my_src import (getSoilConditions, getIllConditions,
                     getSunConditions, getWaterConditions)
 
