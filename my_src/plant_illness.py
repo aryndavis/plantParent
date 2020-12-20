@@ -1,23 +1,21 @@
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
-import os
-os.chdir('my_src/')
 
 
-def getIllConditions(plantName):
+def getIllConditions(filename):
     tokenizer = AutoTokenizer.from_pretrained(
         "bert-large-uncased-whole-word-masking-finetuned-squad")
     model = AutoModelForQuestionAnswering.from_pretrained(
         "bert-large-uncased-whole-word-masking-finetuned-squad")
 
-    file = open("care_files/" + plantName + ".txt", "r")
+    file = open(filename, "r")
     text = file.read()
 
     questions = [
         "What are common problems with this plant?",
         "What does this plant not do well in?"
     ]
-
+    answers = []
     for question in questions:
         inputs = tokenizer.encode_plus(
             question, text, add_special_tokens=True, return_tensors="pt")
@@ -32,10 +30,9 @@ def getIllConditions(plantName):
 
         answer = tokenizer.convert_tokens_to_string(
             tokenizer.convert_ids_to_tokens(input_ids[answer_start:answer_end])
-            )
-
+        )
+        answers.append(answer)
         print(f"Question: {question}")
         print(f"Answer: {answer}\n")
-
-
-getIllConditions('pothos')
+    plantname = filename.rpartition('/')[2][:-4]
+    return plantname, answers
