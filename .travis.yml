@@ -1,8 +1,8 @@
 language: python
 dist: xenial
 python:
-  - 3.8
-
+  - 3.6
+cache: pip
 os:
   - linux
 
@@ -14,13 +14,9 @@ deploy:
     script: travis-wait-improved --timeout 30m packer build packer.json
 
 install:
-  - pip install -U pip wheel
   - pip install flake8 codecov pytest pytest-cov
   - pip install -r requirements.txt
 
-cache:
-  directories:
-    - $HOME/.cache/pip
 
 script:
   - python -m flake8 my_src/
