@@ -1,0 +1,45 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+  
+language: python
+dist: xenial
+python:
+  - 3.6
+cache: pip
+os:
+  - linux
+
+install:
+  - pip install flake8 codecov pytest pytest-cov
+  - pip install -r requirements.txt
+
+
+script:
+  - python -m flake8 my_src/
+  - python -m pytest -vvv my_src/tests/tests.py --cov my_src
+
+after_success:
+  - codecov
+
+branches:
+  only:
+    - master
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run:
+          command: ./manage.py test
+          name: Test
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
