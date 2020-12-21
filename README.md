@@ -8,4 +8,14 @@
 ![Codecov](https://img.shields.io/codecov/c/github/aryndavis/plantParent)
 ![Read the Docs](https://img.shields.io/readthedocs/plantparent)
 
-I have recently started buying a lot of plants and would like something to help me keep track of what each plant's needs are, whether that be soil type, watering schedule, and how to diagnose fungal infections and what not. This library is the solution to that. 
+## About This Project
+
+This project was inspired by my journey learning how to take care of multiple species of plants and not being able to find a resource to answer basic and common questions on how to care for these plants. Many websites have too many ads or too much content to sift through, so this is designed to take in the blocks of text that are provided on these sites and extract only the most necessary information. 
+
+## How It Works
+
+## Getting Started
+
+## Demo
+
+![getting water conditions](demo/demo.gif)
