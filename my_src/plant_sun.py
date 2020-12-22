@@ -1,8 +1,16 @@
+import sys
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
 
 
 def getSunConditions(filename):
+    """
+    Get the most favorable light conditions for a species of plant.
+    :param filename: the file containing a length of text about the species of
+    plant at large
+    :return: a tuple of the plant species and a list of the answers to the two
+    hardcoded questions of sunlight conditions
+    """
     tokenizer = AutoTokenizer.from_pretrained(
         "bert-large-uncased-whole-word-masking-finetuned-squad")
     model = AutoModelForQuestionAnswering.from_pretrained(
@@ -38,4 +46,8 @@ def getSunConditions(filename):
     return plantname, answers
 
 
-getSunConditions('my_src/care_files/alocasia.txt')
+if __name__ == "__main__":
+
+    file1 = sys.argv[1]
+
+    getSunConditions(file1)
