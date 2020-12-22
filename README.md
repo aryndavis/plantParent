@@ -33,3 +33,8 @@ pip install -r requirements.txt
 * Webscraping information and saving it into text files for multiple species of plants
 * Finetuning the question and answering pipeline to get longer answers or extract answers from multiple places in the text
 * Allowing a timer to be set in order to keep track of watering schedule (?)
+
+
+### About The Author
+
+Feel free to look at my other projects or peruse my website: https://aryndavis.github.io
