@@ -3,16 +3,15 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
 
 
-
 def getWaterConditions(filename):
     """
     Get the most favorable water scheduling for a species of plant.
 
-    :param filename: the file containing a length of text about the 
+    :param filename: the file containing a length of text about the
         species of plant at large
     :type filename: class 'str'
 
-    :return: a tuple of the plant species and a list containing the answer 
+    :return: a tuple of the plant species and a list containing the answer
         to the hardcoded question of watering conditions
     :rtype: tuple, first element a string, second element is a list
     """

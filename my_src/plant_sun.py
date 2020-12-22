@@ -3,10 +3,10 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
 
 
-def getSunConditions( filename):
+def getSunConditions(filename):
     """
     Get the most favorable light conditions for a species of plant.
-    
+
     :param filename: the file containing a length of text about the species of
         plant at large
     :type filename: class 'str'
@@ -53,5 +53,5 @@ def getSunConditions( filename):
 if __name__ == "__main__":
 
     file1 = sys.argv[1]
-    
+
     getSunConditions(file1)

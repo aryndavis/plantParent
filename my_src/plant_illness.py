@@ -3,16 +3,15 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
 
 
-
 def getIllConditions(filename):
     """
     Get the most common issues or problems for a species of plant.
 
-    :param filename: the file containing a length of text about the 
+    :param filename: the file containing a length of text about the
         species of plant at large
     :type filename: class 'str'
 
-    :return: a tuple of the plant species and a list of the answers to the 
+    :return: a tuple of the plant species and a list of the answers to the
         two hardcoded questions of what conditions harm this plant most often
     :rtype: tuple, first element a string, second element is a list
     """
