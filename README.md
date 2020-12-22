@@ -1,12 +1,15 @@
 # plantParent
 
-![GitHub](https://img.shields.io/github/license/aryndavis/animemusic)
-![GitHub last commit](https://img.shields.io/github/last-commit/aryndavis/animemusic)
-![GitHub issues](https://img.shields.io/github/issues-raw/aryndavis/animemusic)
+![GitHub](https://img.shields.io/github/license/aryndavis/plantParent)
+![GitHub last commit](https://img.shields.io/github/last-commit/aryndavis/plantParent)
+![GitHub issues](https://img.shields.io/github/issues-raw/aryndavis/plantParent)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/aryndavis/plantParent)
 ![Python Version](https://img.shields.io/badge/python-3.8-blue)
 ![Travis (.com)](https://img.shields.io/travis/com/aryndavis/plantParent)
 ![Codecov](https://img.shields.io/codecov/c/github/aryndavis/plantParent)
 ![Read the Docs](https://img.shields.io/readthedocs/plantparent)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/aryndavis/plantParent)
+![GitHub contributors](https://img.shields.io/github/contributors/aryndavis/plantParent)
 
 ## About This Project
 
@@ -30,7 +33,7 @@ python plant_sun.py [file1]
 ```
 And example files for you to use can be found in the care_files/ folder.
 
-Find the full documentation here: https://plantparent.readthedocs.io/en/latest/
+Find the full documentation here: https://plantparent.readthedocs.io/en/stable/
 
 And see the package from testPyPi here: https://test.pypi.org/project/plantParent/0.1.1/
 
