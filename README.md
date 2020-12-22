@@ -32,7 +32,7 @@ And example files for you to use can be found in the care_files/ folder.
 
 Find the full documentation here: https://plantparent.readthedocs.io/en/latest/
 
-And see the package from PyPi here: https://test.pypi.org/project/plantParent/0.1.1/
+And see the package from testPyPi here: https://test.pypi.org/project/plantParent/0.1.1/
 
 ## Demo
 
