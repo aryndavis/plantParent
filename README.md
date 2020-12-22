@@ -1,4 +1,4 @@
-# plantParent
+<div align="center"><h1> plantParent </h1></div>
 
 ![GitHub](https://img.shields.io/github/license/aryndavis/plantParent)
 ![GitHub last commit](https://img.shields.io/github/last-commit/aryndavis/plantParent)
