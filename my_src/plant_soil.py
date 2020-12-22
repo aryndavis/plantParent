@@ -3,14 +3,20 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
 
 
-def getSoilConditions(filename):
+
+
+def getSoilConditions( filename):
     """
     Get the most favorable soil conditions for a species of plant.
+
     :param filename: the file containing a length of text about the species of
-    plant at large
-    :return: a tuple of the plant species and a list of the answers to the two
-    hardcoded questions of soil conditions and how the soil should be before
-    watering
+        plant at large
+    :type filename: class 'str'
+
+    :return: a tuple of the plant species and a list of the answers to the 
+        two hardcoded questions of what conditions harm this plant most often
+    :rtype: tuple, first element a string, second element is a list
+    
     """
     tokenizer = AutoTokenizer.from_pretrained(
         "bert-large-uncased-whole-word-masking-finetuned-squad")
@@ -50,5 +56,5 @@ def getSoilConditions(filename):
 if __name__ == "__main__":
 
     file1 = sys.argv[1]
-
+  
     getSoilConditions(file1)
