@@ -12,9 +12,9 @@ import sphinx_rtd_theme
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
 
 # -- Project information -----------------------------------------------------
@@ -33,7 +33,8 @@ master_doc='index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
-extensions = ['recommonmark']
+extensions = ['recommonmark', 'sphinx.ext.todo',
+              'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 source_suffix = ['.rst', '.md']
 
 # Add any paths that contain templates here, relative to this directory.
