@@ -23,7 +23,14 @@ Clone this repo and install necessary requirements with
 ```
 pip install -r requirements.txt
 ```
-Find the documentation here: https://plantparent.readthedocs.io/en/latest/
+
+And you can run each file by using, for example:
+```
+python plant_sun.py [file1]
+```
+And example files for you to use can be found in the care_files/ folder.
+
+Find the full documentation here: https://plantparent.readthedocs.io/en/latest/
 
 ## Demo
 
