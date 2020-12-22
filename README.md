@@ -23,6 +23,7 @@ Clone this repo and install necessary requirements with
 ```
 pip install -r requirements.txt
 ```
+Find the documentation here: https://plantparent.readthedocs.io/en/latest/
 
 ## Demo
 
