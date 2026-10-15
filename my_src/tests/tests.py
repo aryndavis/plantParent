@@ -32,11 +32,11 @@ class TestStuff(unittest.TestCase):
 
     def test_soil_dieff(self):
         assert getSoilConditions(
-            'my_src/care_files/dieffenbachia.txt') == ('dieffenbachia', ['moist , but not soggy', 'moist'])  # noqa
+            'my_src/care_files/dieffenbachia.txt') == ('dieffenbachia', ['moist, but not soggy', 'moist'])  # noqa
 
     def test_soil_po(self):
         assert getSoilConditions(
-            'my_src/care_files/pothos.txt') == ('pothos', ['nutrient rich soil , but do almost as well in nutrient poor soil', 'dry soil'])  # noqa
+            'my_src/care_files/pothos.txt') == ('pothos', ['nutrient rich soil, but do almost as well in nutrient poor soil', 'dry soil'])  # noqa
 
     def test_soil_pl(self):
         assert getSoilConditions(
@@ -44,7 +44,7 @@ class TestStuff(unittest.TestCase):
 
     def test_water_al(self):
         assert getWaterConditions(
-            'my_src/care_files/alocasia.txt') == ('alocasia', ['allow the top 2 - 3 \" to dry between watering to ensure the plant isn \' t sitting in soil that is too wet . alocasias can be susceptible to root rot and fungal infections if their soil doesn \' t have proper drainage and becomes waterlogged , so we always advise potting these plants in a vessel with a drainage hole'])  # noqa
+            'my_src/care_files/alocasia.txt') == ('alocasia', ['allow the top 2 - 3 \" to dry between watering to ensure the plant isn \' t sitting in soil that is too wet. alocasias can be susceptible to root rot and fungal infections if their soil doesn \' t have proper drainage and becomes waterlogged, so we always advise potting these plants in a vessel with a drainage hole'])  # noqa
 
     def test_water_dieff(self):
         assert getWaterConditions(

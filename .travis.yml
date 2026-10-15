@@ -1,7 +1,7 @@
 language: python
-dist: xenial
+dist: jammy
 python:
-  - 3.6
+  - "3.12"
 cache: pip
 os:
   - linux
