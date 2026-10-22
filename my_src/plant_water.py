@@ -28,11 +28,13 @@ def getWaterConditions(filename):
     ]
     answers = []
     for question in questions:
-        inputs = tokenizer.encode_plus(
+        inputs = tokenizer(
             question, text, add_special_tokens=True, return_tensors="pt")
         input_ids = inputs["input_ids"].tolist()[0]
 
-        answer_start_scores, answer_end_scores = model(**inputs)
+        outputs = model(**inputs)
+        answer_start_scores = outputs.start_logits
+        answer_end_scores = outputs.end_logits
 
         # Get the most likely beginning of answer with the argmax of the score
         answer_start = torch.argmax(answer_start_scores)
