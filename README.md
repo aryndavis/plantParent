@@ -5,7 +5,6 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/aryndavis/plantParent)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/aryndavis/plantParent)
 ![Python Version](https://img.shields.io/badge/python-3.8-blue)
-![Travis (.com)](https://img.shields.io/travis/com/aryndavis/plantParent)
 ![Codecov](https://img.shields.io/codecov/c/github/aryndavis/plantParent)
 ![Read the Docs](https://img.shields.io/readthedocs/plantparent)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/aryndavis/plantParent)
